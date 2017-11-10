@@ -2,7 +2,7 @@
 	"name": "cyberdyne",
 	"version": "0.0.0",
 	"private": true,
-	"author": "Pedro Cesar",
+	"author": "Ryan",
 	"description": "DESCRIPTION",
 	"dependencies": {
 		"hubot-maps": "0.0.2",
