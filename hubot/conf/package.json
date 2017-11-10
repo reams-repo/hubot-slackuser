@@ -1,0 +1,29 @@
+{
+	"name": "cyberdyne",
+	"version": "0.0.0",
+	"private": true,
+	"author": "Pedro Cesar",
+	"description": "DESCRIPTION",
+	"dependencies": {
+		"hubot-maps": "0.0.2",
+		"hubot-help": "~0.1.3",
+		"hubot-shipit": "~0.2.0",
+		"hubot-diagnostics": "0.0.1",
+		"hubot-pugme": "~0.1.0",
+		"hubot-rules": "~0.1.1",
+		"hubot-google-images": "~0.2.6",
+		"hubot-google-translate": "~0.2.0",
+		"hubot-redis-brain": "0.0.3",
+		"hubot-scripts": "~2.16.2",
+		"hubot": "2.19.0",
+		"hubot-slack": "4.3.4",
+		"hubot-victory": "1.5.3",
+		"hubot-jenkins": "1.0.2",
+		"coffee-script": "1.12.5",
+		"hubot-keepalive": "0.0.2",
+		"cron": "1.2.1"
+	},
+	"engines": {
+		"node": "0.10.x"
+	}
+}
