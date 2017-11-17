@@ -5,9 +5,9 @@ EXPOSE 6379
 
 ENV DIRECTORY "/home/hubot"
 ENV NAME "hubot"
-ENV OWNER "hogehoge Inc."
+ENV OWNER "Ryan McCaul"
 ENV DESCRIPTION "Hubot"
-ENV NODE_VERSION "7.0.0"
+ENV NODE_VERSION "5.0.0"
 
 RUN apt-get update && \
     apt-get install -y sudo \
