@@ -5,7 +5,7 @@ EXPOSE 6379
 
 ENV DIRECTORY "/home/hubot"
 ENV NAME "hubot"
-ENV OWNER "Ryan McCaul"
+ENV OWNER "hogehoge Inc."
 ENV DESCRIPTION "Hubot"
 ENV NODE_VERSION "7.0.0"
 
