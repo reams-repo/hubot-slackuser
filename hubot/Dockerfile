@@ -1,11 +1,13 @@
 FROM ubuntu:trusty-20170330
 MAINTAINER "Ryan McCaul"
 
+EXPOSE 6379
+
 ENV DIRECTORY "/home/hubot"
 ENV NAME "hubot"
 ENV OWNER "Ryan McCaul"
 ENV DESCRIPTION "Hubot"
-ENV NODE_VERSION "8.9.1"
+ENV NODE_VERSION "7.0.0"
 
 RUN apt-get update && \
     apt-get install -y sudo \
