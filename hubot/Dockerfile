@@ -1,5 +1,5 @@
 FROM ubuntu:trusty-20170330
-MAINTAINER "Kenzo Tanaka" <kenzo.tanaka0107@gmail.com>
+MAINTAINER "Ryan McCaul"
 
 EXPOSE 6379
 
@@ -41,6 +41,7 @@ RUN npm install generator-hubot
 RUN npm install hubot-jira-comment --save
 RUN npm install hubot-misawa --save
 RUN npm install hubot-cat --save
+RUN npm install --save hubot-standup-alarm
 
 # INSTALL APP
 RUN yo hubot --owner="$OWNER" --name="$NAME" --description="DESCRIPTION" --defaults
