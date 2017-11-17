@@ -24,8 +24,8 @@ WORKDIR "$DIRECTORY"
 USER hubot
 
 # DOWNLOAD NODENV AND PATH
-RUN git clone git://github.com/OiNutter/nodenv.git /home/hubot/.nodenv && \
-    git clone git://github.com/OiNutter/node-build.git /home/hubot/.nodenv/plugins/node-build
+RUN git clone git://github.com:nodejs/node.git /home/hubot/.nodenv && \
+    git clone git://github.com:nodenv/node-build.git /home/hubot/.nodenv/plugins/node-build
 ENV PATH /home/hubot/.nodenv/shims:/home/hubot/.nodenv/bin:/home/hubot/.nodenv/versions/$NODE_VERSION/bin:$PATH
 
 # INSTALL NODENV VERSION
