@@ -1,13 +1,11 @@
 FROM ubuntu:trusty-20170330
 MAINTAINER "Ryan McCaul"
 
-EXPOSE 6379
-
 ENV DIRECTORY "/home/hubot"
 ENV NAME "hubot"
-ENV OWNER "hogehoge Inc."
+ENV OWNER "Ryan McCaul"
 ENV DESCRIPTION "Hubot"
-ENV NODE_VERSION "5.0.0"
+ENV NODE_VERSION "8.9.1"
 
 RUN apt-get update && \
     apt-get install -y sudo \
@@ -24,8 +22,8 @@ WORKDIR "$DIRECTORY"
 USER hubot
 
 # DOWNLOAD NODENV AND PATH
-RUN git clone git://github.com:nodejs/node.git /home/hubot/.nodenv && \
-    git clone git://github.com:nodenv/node-build.git /home/hubot/.nodenv/plugins/node-build
+RUN git clone git://github.com/pongstr/nodenv.git /home/hubot/.nodenv && \
+    git clone git://github.com/pongstr/node-build.git /home/hubot/.nodenv/plugins/node-build
 ENV PATH /home/hubot/.nodenv/shims:/home/hubot/.nodenv/bin:/home/hubot/.nodenv/versions/$NODE_VERSION/bin:$PATH
 
 # INSTALL NODENV VERSION
