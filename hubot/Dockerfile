@@ -1,4 +1,4 @@
-FROM ubuntu:trusty-20170330
+FROM node:argon
 MAINTAINER "Ryan McCaul"
 
 EXPOSE 6379
@@ -7,7 +7,7 @@ ENV DIRECTORY "/home/hubot"
 ENV NAME "hubot"
 ENV OWNER "Ryan McCaul"
 ENV DESCRIPTION "Hubot"
-ENV NODE_VERSION "7.7.3"
+ENV NODE_VERSION "5.0.0"
 
 RUN apt-get update && \
     apt-get install -y sudo \
