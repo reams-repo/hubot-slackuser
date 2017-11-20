@@ -7,7 +7,7 @@ ENV DIRECTORY "/home/hubot"
 ENV NAME "hubot"
 ENV OWNER "Ryan McCaul"
 ENV DESCRIPTION "Hubot"
-ENV NODE_VERSION "6.0.0"
+ENV NODE_VERSION "5.0.0"
 
 RUN apt-get update && \
     apt-get install -y sudo \
@@ -38,7 +38,6 @@ RUN npm config set unsafe-perm true
 RUN npm cache clean && npm install -g yo coffee-script
 ADD ./conf/ "$DIRECTORY"
 RUN npm install generator-hubot
-RUN npm install hubot-misawa --save
 RUN npm install hubot-cat --save
 RUN npm install --save hubot-standup-alarm
 

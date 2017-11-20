@@ -9,7 +9,6 @@
   "hubot-redis-brain",
   "hubot-rules",
   "hubot-standup-alarm",
-  "hubot-jira-comment",
   "hubot-keepalive",
   "hubot-cat"
 ]
