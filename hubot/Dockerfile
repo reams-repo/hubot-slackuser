@@ -40,6 +40,7 @@ ADD ./conf/ "$DIRECTORY"
 RUN npm install generator-hubot
 RUN npm install hubot-cat --save
 RUN npm install --save hubot-standup-alarm
+RUN npm install --save hubot-trello
 
 # INSTALL APP
 RUN yo hubot --owner="$OWNER" --name="$NAME" --description="DESCRIPTION" --defaults

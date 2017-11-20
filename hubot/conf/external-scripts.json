@@ -10,5 +10,6 @@
   "hubot-rules",
   "hubot-standup-alarm",
   "hubot-keepalive",
+  "hubot-trello",
   "hubot-cat"
 ]

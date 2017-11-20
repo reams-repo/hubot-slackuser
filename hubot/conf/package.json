@@ -16,6 +16,7 @@
 		"hubot-redis-brain": "0.0.3",
 		"hubot-scripts": "~2.16.2",
 		"hubot": "2.19.0",
+		"hubot-trello": "*",
 		"hubot-slack": "4.3.4",
 		"hubot-victory": "1.5.3",
 		"hubot-jenkins": "1.0.2",
