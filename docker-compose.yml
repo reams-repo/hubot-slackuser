@@ -1,6 +1,11 @@
 version: '2'
 
 services:
+  redis:
+    image: redis
+    restart: always
+    volumes:
+      - ./storage/redis:/data
   hubot:
     build:
       context: ./hubot
