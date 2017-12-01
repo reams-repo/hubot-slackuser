@@ -35,7 +35,7 @@ RUN nodenv rehash
 
 # CREATE HUBOT BASE
 RUN npm config set unsafe-perm true
-RUN npm cache clean && npm install -g yo coffee-script
+RUN npm install -g yo coffee-script
 ADD ./conf/ "$DIRECTORY"
 RUN npm install generator-hubot
 RUN npm install hubot-cat --save
